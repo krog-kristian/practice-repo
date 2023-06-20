@@ -65,4 +65,14 @@ describe('romanToInt', () => {
     const numeral = 'XXXI';
     expect(romanToInt(numeral)).toEqual(31);
   });
+
+  it('converts the 41st numeral', () => {
+    const numeral = 'XLI';
+    expect(romanToInt(numeral)).toEqual(41);
+  });
+
+  it('converts the 74th numeral', () => {
+    const numeral = 'LXXIV';
+    expect(romanToInt(numeral)).toEqual(74);
+  });
 });
