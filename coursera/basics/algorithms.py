@@ -22,4 +22,4 @@ def is_palindrome(str):
 
 
 
-print(is_palindrome('teet'))
+print(is_palindrome(str))
