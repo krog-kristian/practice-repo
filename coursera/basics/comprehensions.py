@@ -51,3 +51,24 @@ print('Using one input list to create dict: ', num_dict)
 # Using two input lists
 months_dict = {key:value for (key, value) in zip(number, months)}
 print('Using two lists: ', months_dict)
+
+#SET COMPREHENSION
+
+#similar to lists except the use of curly braces.
+set_a = {x for x in range(10, 20) if x not in [12, 14, 16]}
+print('Set comprehension: ', set_a)
+
+#GENERATOR COMPREHENSION
+#generators are also similarto lists however can be more memory efficient.
+
+data = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31]
+gen_obj = (x for x in data)
+print(gen_obj)
+print(type(gen_obj))
+for items in gen_obj:
+    print(items, end=" ")
+
+#Comprehensions do similar stuff as map function, the benefits are better code readability
+#and that you can filter with if else conditions
+#Drawbacks of comprehensions can be less efficient
+#map functions can usually be better with larger data sets.
