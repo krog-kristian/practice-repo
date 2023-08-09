@@ -1,3 +1,4 @@
+# Functions for testing
 def word_count(sentence):
     # Function to check the number of words. Returns the word count in string.
     words = len(sentence.split())
